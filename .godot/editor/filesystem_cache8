@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1729845790
+buttons.tres::ButtonGroup::2318598043916309098::1710585271::0::1::::<><>::
+Grid.gd::GDScript::-1::1710755146::0::1::::<>GridContainer<>::
+icon.svg::CompressedTexture2D::6468793312072307966::1710584132::1710584233::1::::<><>::
+main.tscn::PackedScene::7691012089709843236::1710755149::0::1::::<><>::uid://ba706vk5udc1e::::res://art/nought.png<>res://Grid.gd<>uid://8be8aro4ssfy::::res://buttons.tres<>uid://nixhuaadyw0y::::res://art/empty_cell.png<>uid://cb0tsy6gapjkd::::res://art/empty_cell_hover.png<>uid://cm5jcer4rjg8d::::res://art/cross.png<>uid://be8fny1k8fdsm::::res://art/ai.png<>uid://bcpg4iyxis8u0::::res://art/ai_hover.png
+::res://art/::1710589528
+ai.png::CompressedTexture2D::2735628625637771380::1710589462::1710589467::1::::<><>::
+ai_hover.png::CompressedTexture2D::2558180585578462133::1710589526::1710589528::1::::<><>::
+cross.png::CompressedTexture2D::5677589085882874421::1710586710::1710586712::1::::<><>::
+empty_cell.png::CompressedTexture2D::930380031189843634::1710585134::1710585136::1::::<><>::
+empty_cell_hover.png::CompressedTexture2D::4895826730751133043::1710585164::1710585165::1::::<><>::
+nought.png::CompressedTexture2D::2454055176081535000::1710586585::1710586586::1::::<><>::

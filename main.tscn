@@ -1,0 +1,118 @@
+[gd_scene load_steps=9 format=3 uid="uid://dhtt30loym6ce"]
+
+[ext_resource type="Texture2D" uid="uid://ba706vk5udc1e" path="res://art/nought.png" id="1_hmfni"]
+[ext_resource type="Script" path="res://Grid.gd" id="1_lepgy"]
+[ext_resource type="ButtonGroup" uid="uid://8be8aro4ssfy" path="res://buttons.tres" id="1_lr5p2"]
+[ext_resource type="Texture2D" uid="uid://nixhuaadyw0y" path="res://art/empty_cell.png" id="1_woucy"]
+[ext_resource type="Texture2D" uid="uid://cb0tsy6gapjkd" path="res://art/empty_cell_hover.png" id="2_dhs57"]
+[ext_resource type="Texture2D" uid="uid://cm5jcer4rjg8d" path="res://art/cross.png" id="4_wj4gh"]
+[ext_resource type="Texture2D" uid="uid://be8fny1k8fdsm" path="res://art/ai.png" id="7_qrc1j"]
+[ext_resource type="Texture2D" uid="uid://bcpg4iyxis8u0" path="res://art/ai_hover.png" id="8_y0iys"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Grid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3
+script = ExtResource("1_lepgy")
+buttons = ExtResource("1_lr5p2")
+nought_texture = ExtResource("1_hmfni")
+cross_texture = ExtResource("4_wj4gh")
+
+[node name="Button0" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="Button1" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="Button2" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="Button3" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="Button4" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="Button5" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="Button6" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="Button7" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="Button8" type="TextureButton" parent="Grid"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_lr5p2")
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="ReplayButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 670.0
+offset_top = 120.0
+offset_right = 886.0
+offset_bottom = 336.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("1_woucy")
+texture_hover = ExtResource("2_dhs57")
+
+[node name="AIButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 670.0
+offset_top = 270.0
+offset_right = 886.0
+offset_bottom = 486.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("7_qrc1j")
+texture_hover = ExtResource("8_y0iys")
+
+[connection signal="pressed" from="AIButton" to="Grid" method="_on_ai_button_pressed"]
